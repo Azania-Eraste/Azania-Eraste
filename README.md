@@ -4,9 +4,9 @@ Salut ! Je suis **Kouadio Sanidi Azania Eraste**, un développeur passionné par
 
 ## Technologies & Compétences 🚀
 
-- **Web Development**: HTML, CSS, JavaScript
-- **Mobile Development**: Flutter
-- **Backend**: Django
+- **Web Development**: HTML, CSS, JavaScript,Bootstrap
+- **Mobile Development**: Dart/Flutter
+- **Backend**: Python/Django
 - **Web Scraping**: Selenium
 - **Autres**: Git, GitHub, JSON,
 
