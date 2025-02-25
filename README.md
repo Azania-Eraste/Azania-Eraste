@@ -13,7 +13,7 @@ Salut ! Je suis **Kouadio Sanidi Azania Eraste**, un développeur passionné par
 ## Contact 📫
 
 Vous pouvez me contacter via:
-- **Email**: erastek3@gmail.com
+- **Email**: kouadioazania@gmail.com
 - **LinkedIn**: Azania kouadio
 
 Merci de visiter mon GitHub et de jeter un œil à mes projets. N'hésitez pas à contribuer ou à me contacter pour discuter !
