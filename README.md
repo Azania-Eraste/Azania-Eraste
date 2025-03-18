@@ -6,7 +6,35 @@ Actuellement étudiant en 2e année de **Génie Logiciel** à l'Institut Ivoirie
 
 <style>
 .typewrite > .wrap { border-right: 0.08em solid #fff; }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0% { transform: translatey(0px); }
+  50% { transform: translatey(-10px); }
+  100% { transform: translatey(0px); }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.contact-item {
+  transition: transform 0.3s;
+}
+
+.contact-item:hover {
+  transform: scale(1.1);
+}
 </style>
+
 <script>
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -58,12 +86,20 @@ window.onload = function() {
           new TxtType(elements[i], JSON.parse(toRotate), period);
         }
     }
+
+    var fadeInElements = document.querySelectorAll('.fade-in');
+    fadeInElements.forEach(function(element) {
+        element.style.opacity = 0;
+        setTimeout(function() {
+            element.style.opacity = 1;
+        }, 1000);
+    });
 };
 </script>
 
 ## Technologies & Compétences 🚀
 
-- **Web Development**: HTML, CSS, JavaScript,Bootstrap
+- **Web Development**: HTML, CSS, JavaScript, Bootstrap
 - **Mobile Development**: Dart/Flutter
 - **Backend**: Python/Django
 - **Web Scraping**: Selenium
@@ -72,7 +108,7 @@ window.onload = function() {
 ## Contact 📫
 
 Vous pouvez me contacter via:
-- **Email**: kouadioazania@gmail.com
-- **LinkedIn**: Azania kouadio
+- **Email**: <a class="contact-item" href="mailto:kouadioazania@gmail.com">kouadioazania@gmail.com</a>
+- **LinkedIn**: <a class="contact-item" href="https://www.linkedin.com/in/azania-kouadio">Azania kouadio</a>
 
 Merci de visiter mon GitHub et de jeter un œil à mes projets. N'hésitez pas à contribuer ou à me contacter pour discuter !
