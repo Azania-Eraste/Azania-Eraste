@@ -5,97 +5,16 @@ Un développeur passionné par le <span class="typewrite" data-period="2000" dat
 Actuellement étudiant en 2e année de **Génie Logiciel** à l'Institut Ivoirien de Technologie, je travaille sur plusieurs projets avec des technologies comme **HTML/CSS/JS**, **Flutter**, **Django**, et je fais aussi du **web scraping** avec **Selenium**.
 
 <style>
-.typewrite > .wrap { border-right: 0.08em solid #fff; }
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
 }
 
-@keyframes float {
-  0% { transform: translatey(0px); }
-  50% { transform: translatey(-10px); }
-  100% { transform: translatey(0px); }
-}
-
-.fade-in {
-  animation: fadeIn 2s ease-in-out;
-}
-
-.float {
-  animation: float 3s ease-in-out infinite;
-}
-
-.contact-item {
-  transition: transform 0.3s;
-}
-
-.contact-item:hover {
-  transform: scale(1.1);
+.typewrite {
+  display: inline-block;
+  animation: fadeInOut 6s infinite;
 }
 </style>
-
-<script>
-var TxtType = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-};
-
-TxtType.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-
-    if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-
-    if (this.isDeleting) { delta /= 2; }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-    }
-
-    setTimeout(function() {
-    that.tick();
-    }, delta);
-};
-
-window.onload = function() {
-    var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
-        var period = elements[i].getAttribute('data-period');
-        if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
-        }
-    }
-
-    var fadeInElements = document.querySelectorAll('.fade-in');
-    fadeInElements.forEach(function(element) {
-        element.style.opacity = 0;
-        setTimeout(function() {
-            element.style.opacity = 1;
-        }, 1000);
-    });
-};
-</script>
 
 ## Technologies & Compétences 🚀
 
