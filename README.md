@@ -4,18 +4,6 @@ Un développeur passionné par le <span class="typewrite" data-period="2000" dat
 
 Actuellement étudiant en 2e année de **Génie Logiciel** à l'Institut Ivoirien de Technologie, je travaille sur plusieurs projets avec des technologies comme **HTML/CSS/JS**, **Flutter**, **Django**, et je fais aussi du **web scraping** avec **Selenium**.
 
-<style>
-@keyframes fadeInOut {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
-}
-
-.typewrite {
-  display: inline-block;
-  animation: fadeInOut 6s infinite;
-}
-</style>
-
 ## Technologies & Compétences 🚀
 
 - **Web Development**: HTML, CSS, JavaScript, Bootstrap
